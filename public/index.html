@@ -1,6 +1,6 @@
 <html>
   <head>
-    <script src="http://13.212.22.134:3000/socket.io/socket.io.js"></script>
+    <script src="http://localhost:5555/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
@@ -41,7 +41,7 @@
       Call
     </button>
     <script>
-      var socket = io("http://localhost:3000", { transport: ["websocket"] });
+      var socket = io("http://localhost:5555", { transport: ["websocket"] });
       var yourVideo = document.getElementById("yourVideo");
       var friendsVideo = document.getElementById("friendsVideo");
       var yourId = Math.floor(Math.random() * 1000000000);
